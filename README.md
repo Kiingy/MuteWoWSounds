@@ -59,7 +59,8 @@ The comment can be anything, followed by a hyphen then each of the sound kit ids
 
 The sound kit ids can be found from the sounds tab of the NPC page on wowhead you opened earlier.
 
-To mute the raptor sounds: 
+So back to the raptor mount example:
+
 `raptor mounts - 704,705,706,707`
 
 Or as long as each is on a new line you can also break this down further if you prefer, like so:
