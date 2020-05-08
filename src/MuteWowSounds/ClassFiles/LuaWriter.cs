@@ -9,7 +9,6 @@ namespace MuteWowSounds.ClassFiles {
         private readonly MuteSoundsUI parent;
 
         public LuaWriter(MuteSoundsUI parent) {
-
             this.parent = parent;
         }
 
@@ -22,7 +21,7 @@ namespace MuteWowSounds.ClassFiles {
 
         public string CreateLuaTableString(List<SoundList> SoundTargets, List<SoundFileEntry> SoundKitData) {
             string tableString = "-- Created with MAWoWSoundsGenerator v" + parent.VersionNum + ", Build Date " + parent.VersionDate + ".\n" +
-                "-- Creation Date: "+ GetDateTimestamp()+" -- (day/month/year)\n" +
+                "-- Creation Date: " + GetDateTimestamp() + " -- (day/month/year)\n" +
                 "MAWowSoundsCustom = {\n";
             parent.LogMessage("\nMatching FileDataIDs:\n", Color.Black, parent.Bold_Font);
             foreach (SoundList fileList in SoundTargets) {
@@ -60,7 +59,7 @@ namespace MuteWowSounds.ClassFiles {
                         formattedString = formattedString + " -- " + i + "\n";
                     } else {
                         hasError = true;
-                        soundKitErrors += "'"+i + "', ";
+                        soundKitErrors += "'" + i + "', ";
                         errorCount++;
                     }
                 }
