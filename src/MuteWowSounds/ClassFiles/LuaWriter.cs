@@ -27,7 +27,6 @@ namespace MuteWowSounds.ClassFiles {
             foreach (SoundList fileList in SoundTargets) {
                 parent.LogMessage("File: " + fileList.ListName, Color.Black, parent.Default_Font);
                 tableString = tableString + "   -- File: " + fileList.ListName + "\n" + GetFileDataID(fileList.ListName, SoundKitData, fileList);
-
             }
             tableString += "}";
             return tableString.Remove(tableString.LastIndexOf(","), 1);
@@ -63,7 +62,6 @@ namespace MuteWowSounds.ClassFiles {
                         errorCount++;
                     }
                 }
-
                 // For sounds not part of a soundkit
                 // In this case the sound ID is the FileDataID, no matching required.
                 if (st.SingleSounds.Count > 0) {
