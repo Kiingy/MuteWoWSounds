@@ -1,4 +1,5 @@
 using MuteWowSounds.ClassFiles.ObjectClasses;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
@@ -14,14 +15,15 @@ namespace MuteWowSounds.ClassFiles {
 
 
         public void WriteLuaFile(string text, string name) {
+            parent.LogMessage("\nWriting 'CustomSounds.lua'.\n", Color.Green, parent.Default_Font);
             StreamWriter sw = new StreamWriter(parent.Folder_Output + name);
             sw.WriteLine(text);
             sw.Close();
         }
 
         public string CreateLuaTableString(List<SoundList> SoundTargets, List<SoundFileEntry> SoundKitData) {
-            string tableString = "-- Created with MAWoWSoundsGenerator v" + parent.VersionNum + ", vDate " + parent.VersionDate + ".\n" +
-                "-- Creation Date: \n" +
+            string tableString = "-- Created with MAWoWSoundsGenerator v" + parent.VersionNum + ", Build Date " + parent.VersionDate + ".\n" +
+                "-- Creation Date: "+ GetDateTimestamp()+" -- (day/month/year)\n" +
                 "MAWowSoundsCustom = {\n";
             parent.LogMessage("\nMatching FileDataIDs:\n", Color.Black, parent.Bold_Font);
             foreach (SoundList fileList in SoundTargets) {
@@ -33,7 +35,7 @@ namespace MuteWowSounds.ClassFiles {
             return tableString.Remove(tableString.LastIndexOf(","), 1);
         }
 
-
+        // This is where the magic happens. Matches SoundKitIDs to FileDataIDS and returns a formatted lua string.
         private string GetFileDataID(string ListName, List<SoundFileEntry> SoundKitData, SoundList SoundKitIds) {
             List<SoundFileEntry> FilteredSoundData;
             string formattedString = "";
@@ -81,6 +83,10 @@ namespace MuteWowSounds.ClassFiles {
                 parent.LogMessage(" ...done!\n", Color.Green, parent.Bold_Font);
             }
             return formattedString;
+        }
+
+        private string GetDateTimestamp() {
+            return DateTime.Now.ToString("dd/MM/yyyy h:mm tt");
         }
     }
 }
