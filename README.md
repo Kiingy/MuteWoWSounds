@@ -5,8 +5,9 @@ AddOn Page: https://www.curseforge.com/wow/addons/mute-wow-sounds
 
 ## Instructions
 
-### Requirements
-The tool likely wont run on a MAC. Sorry folks! Spaghetti code source is available if anyone would like to port it.
+### MAC Users
+The tool likely wont run on a MAC. Sorry folks! 
+Spaghetti code source is available if anyone would like to port it though.
 
 ### Download
 Download from: https://github.com/Kiingy/MuteWoWSounds/releases/tag/1.0
