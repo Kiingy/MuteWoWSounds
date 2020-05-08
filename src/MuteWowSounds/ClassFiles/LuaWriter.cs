@@ -9,10 +9,9 @@ namespace MuteWowSounds.ClassFiles {
         private readonly MuteSoundsUI parent;
 
         public LuaWriter(MuteSoundsUI parent) {
-            
+
             this.parent = parent;
         }
-
 
         public void WriteLuaFile(string text, string name) {
             parent.LogMessage("\nWriting 'CustomSounds.lua'.\n", Color.Green, parent.Default_Font);
