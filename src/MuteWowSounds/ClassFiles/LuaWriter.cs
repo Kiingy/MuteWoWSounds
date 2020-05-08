@@ -13,7 +13,7 @@ namespace MuteWowSounds.ClassFiles {
         }
 
         public void WriteLuaFile(string text, string name) {
-            parent.LogMessage("\nWriting 'CustomSounds.lua'.\n", Color.Green, parent.Default_Font);
+            parent.LogMessage("\nWriting 'CustomSounds.lua'.\n", Color.Green, parent.Default_Font, false);
             StreamWriter sw = new StreamWriter(parent.Folder_Output + name);
             sw.WriteLine(text);
             sw.Close();
