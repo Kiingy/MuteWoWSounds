@@ -3,7 +3,7 @@ This repository contains the source code and instructions for the Mute Annoying 
 
 AddOn Page: https://www.curseforge.com/wow/addons/mute-wow-sounds
 
-## Instructions
+# Instructions
 
 ## MAC Users
 The tool likely wont run on a MAC. Sorry folks! 
