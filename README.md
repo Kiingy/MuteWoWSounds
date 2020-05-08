@@ -76,7 +76,7 @@ You can also save in-file comments by starting the line with '#'.
 * There is no limit to how many files you can create. You can organize them however you want.
 * There is no limit to how many sounds are muted in each file.
 
-**There is also an example file provided in the download,**
+**There is also an example file provided in the download.**
 
 ## Running The Tool.
 Open 'MuteWoWSounds.exe' and simply click Start.
