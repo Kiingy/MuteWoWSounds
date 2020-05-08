@@ -20,7 +20,7 @@ Once extraced open the MuteWoWSounds folder and you should see:
   * This file is provided by [wow.tools](https://wow.tools/dbc/?dbc=soundkitentry).
   * You can always download the latest version from the above link. 
 * Folder: SoundTargets
-  * File: RaptorExample.txt
+  * File: Example.txt
 * File: MuteWoWSounds.exe
 
 
