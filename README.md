@@ -83,7 +83,7 @@ Open 'MuteWoWSounds.exe' and simply click Start.
 
 The tool will tell you if there are any errors, these can be read in the ErrorLog.txt file found in the Output folder.
 
-Once complete it will create a file called "CustumSounds.lua" in the output folder.
+Once complete it will create a file called "CustomSounds.lua" in the output folder.
 
 ## Muting sounds in-game.
 Navigate to your World of Warcraft > Addons > MuteAnnoyingWoWSounds folder.
