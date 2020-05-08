@@ -6,9 +6,7 @@ AddOn Page: https://www.curseforge.com/wow/addons/mute-wow-sounds
 ## Instructions
 
 ### Download
-Download the tool from:
-
-Extract the contents to any folder.
+Download from: https://github.com/Kiingy/MuteWoWSounds/releases/tag/1.0
 
 ### Folder Structure
 Once extraced open the MuteWoWSounds folder and you should see:
