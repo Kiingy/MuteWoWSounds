@@ -10,7 +10,7 @@ The tool likely wont run on a MAC. Sorry folks!
 Spaghetti code source is available if anyone would like to port it though.
 
 ## Download
-Download from: https://github.com/Kiingy/MuteWoWSounds/releases/tag/1.0
+Download from: https://github.com/Kiingy/MuteWoWSounds/releases/tag/v1.1
 
 ## Folder Structure
 Once extraced open the MuteWoWSounds folder and you should see:
