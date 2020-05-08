@@ -49,9 +49,9 @@ https://www.wowhead.com/sound=XXX : where 'XXX 'is the SoundKitID.
 
 These are the IDs you'll need. Go back to the NPC page and keep it open. 
 
-Next go to where you extracted the tool and open the SoundTargets folder. In here create and open a new text file, it can be named anything you want. Open the newly created file.
+Next go to where you extracted the tool and open the SoundTargets folder. In here create and open a new text file, it can be named anything you want.
 
-To mute sounds, lines must be formatted like so:
+To mute sounds lines must be formatted like so:
 
 `comment - soundkitid1, soundkitid2, .. soundkitidXX`
 
