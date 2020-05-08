@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 
-
 namespace MuteWowSounds.ClassFiles.ObjectClasses {
     class SoundList {
         public SoundList() {

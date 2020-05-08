@@ -1,4 +1,4 @@
-using System.IO;
+﻿using System.IO;
 
 namespace MuteWowSounds.ClassFiles {
     class ErrorCollector {
@@ -35,7 +35,7 @@ namespace MuteWowSounds.ClassFiles {
 
         public void WriteErrorLog(string fileDir, string fileName) {
             if (printLog) {
-                parent.LogMessage("\nWriting error log >> Output\\ErrorLog.txt.\n", parent.eColor, parent.Bold_Font);
+                parent.LogMessage("\nWriting error log -> ErrorLog.txt.\n", parent.eColor, parent.Bold_Font);
                 StreamWriter sw = new StreamWriter(fileDir + fileName, false);
                 sw.WriteLine(printString);
                 sw.Close();

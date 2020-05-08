@@ -15,7 +15,7 @@ using System.IO;
 namespace MuteWowSounds {
     public partial class MuteSoundsUI : Form {
 
-        public string VersionDate = "15/05/20";
+        public string VersionDate = "08/05/20";
         public string VersionNum = "1.0";
         private Thread WorkThread;
 
@@ -36,9 +36,7 @@ namespace MuteWowSounds {
         public readonly Font Bold_Font;
         public Color eColor = Color.FromArgb(179, 0, 0);
 
-
         private List<SoundFileEntry> SoundData;
-
 
         public MuteSoundsUI() {
             InitializeComponent();
