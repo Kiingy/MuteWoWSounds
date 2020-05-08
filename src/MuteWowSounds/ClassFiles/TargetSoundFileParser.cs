@@ -1,11 +1,8 @@
-﻿using MuteWowSounds.ClassFiles.ObjectClasses;
+using MuteWowSounds.ClassFiles.ObjectClasses;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MuteWowSounds.ClassFiles {
     class TargetSoundFileParser {
@@ -65,39 +62,41 @@ namespace MuteWowSounds.ClassFiles {
                 while ((lineData = file.ReadLine()) != null) {
                     // Ignore comment lines.
                     if (!lineData.Trim().StartsWith("#")) {
-                        try {
-                            // First we split the comment and soundkit data.
-                            lineDataSplit = lineData.Split('-');
-                            // This will throw if there isn't exactly one -
-                            if (!(lineDataSplit.Length == 2)) {
-                                throw new InvalidFormatException("Must be exactly one '-' character per line.");
-                            }
-                            soundTarget = new SoundTarget {
-                                // Set the line comment.
-                                EntryComment = lineDataSplit[0].Trim()
-                            };
-                            // Second we split the soundkit data IDs and add them one at a time.
-                            lineDataSplit = lineDataSplit[1].Split(',');
-                            for (int i = 0; i < lineDataSplit.Length; i++) {
-                                // Int parsing error.
-                                try {
-                                    if (lineDataSplit[i].StartsWith("s")) {
-                                        // For sounds not part of SoundKitID.
-                                        soundTarget.SingleSounds.Add(ulong.Parse(lineDataSplit[i].Replace("s", "")));
-                                    } else {
-                                        soundTarget.SoundKitIDs.Add(ulong.Parse(lineDataSplit[i]));
-                                    }
-                                } catch {
-                                    hasError = true;
-                                    errorLogs = errorLogs + "Line: '" + lineNumber + "' Input Given: '" + lineDataSplit[i] + "' Error: Invalid SoundID or SoundKitID. (Must be an integer)\n";
-                                    errorCount++;
+                        if (!String.IsNullOrEmpty(lineData.Trim())) {
+                            try {
+                                // First we split the comment and soundkit data.
+                                lineDataSplit = lineData.Split('-');
+                                // This will throw if there isn't exactly one -
+                                if (!(lineDataSplit.Length == 2)) {
+                                    throw new InvalidFormatException("Must be exactly one '-' character per line.");
                                 }
+                                soundTarget = new SoundTarget {
+                                    // Set the line comment.
+                                    EntryComment = lineDataSplit[0].Trim()
+                                };
+                                // Second we split the soundkit data IDs and add them one at a time.
+                                lineDataSplit = lineDataSplit[1].Split(',');
+                                for (int i = 0; i < lineDataSplit.Length; i++) {
+                                    // Int parsing error.
+                                    try {
+                                        if (lineDataSplit[i].StartsWith("s")) {
+                                            // For sounds not part of SoundKitID.
+                                            soundTarget.SingleSounds.Add(ulong.Parse(lineDataSplit[i].Replace("s", "")));
+                                        } else {
+                                            soundTarget.SoundKitIDs.Add(ulong.Parse(lineDataSplit[i]));
+                                        }
+                                    } catch {
+                                        hasError = true;
+                                        errorLogs = errorLogs + "Line: '" + lineNumber + "' Input Given: '" + lineDataSplit[i] + "' Error: Invalid SoundID or SoundKitID. (Must be an integer)\n";
+                                        errorCount++;
+                                    }
+                                }
+                                newList.targets.Add(soundTarget);
+                            } catch (Exception ex) {
+                                hasError = true;
+                                errorLogs = errorLogs + "Line: '" + lineNumber + "' Error: Incorrect format. (" + ex.Message + ")\n";
+                                errorCount++;
                             }
-                            newList.targets.Add(soundTarget);
-                        } catch (Exception ex) {
-                            hasError = true;
-                            errorLogs = errorLogs + "Line: '" + lineNumber + "' Error: Incorrect format. (" + ex.Message + ")\n";
-                            errorCount++;
                         }
                     }
                     lineNumber++;
