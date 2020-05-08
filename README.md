@@ -5,14 +5,14 @@ AddOn Page: https://www.curseforge.com/wow/addons/mute-wow-sounds
 
 # Instructions
 
-## MAC Users
+## MAC users.
 The tool likely wont run on a MAC. Sorry folks! 
 Spaghetti code source is available if anyone would like to port it though.
 
-## Download
+## Download.
 Download from: https://github.com/Kiingy/MuteWoWSounds/releases/tag/v1.1
 
-## Folder Structure
+## Folder structure.
 Once extraced open the MuteWoWSounds folder and you should see:
 * Folder: Output
 * Folder: SoundKitData
@@ -78,14 +78,14 @@ You can also save in-file comments by starting the line with '#'.
 
 **There is also an example file provided in the download.**
 
-## Running The Tool.
+## Running the tool.
 Open 'MuteWoWSounds.exe' and simply click Start.
 
 The tool will tell you if there are any errors, these can be read in the ErrorLog.txt file found in the Output folder.
 
 Once complete it will create a file called "CustumSounds.lua" in the output folder.
 
-## Muting Sounds In-game.
+## Muting sounds in-game.
 Navigate to your World of Warcraft > Addons > MuteAnnoyingWoWSounds folder.
 
 Copy the 'CustomSounds.lua' file to this folder.
@@ -113,7 +113,7 @@ While it would be possible to do this in-game, this method has four main advanta
    * As this is independant of the WoW client, as long as you keep your sound target files your custom mutes can always be easily recreated.
 4. You can easily share your lists with other players! 
 
-## Finding Sounds on Wowhead
+## Finding sounds on wowhead.
 Wowhead has a huge list of searchable sounds you can find here: https://www.wowhead.com/sounds
 
 If you want to find the "Frostbolt" sounds for example you can simply search for 'frostbolt' and apply the type filter.
