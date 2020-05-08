@@ -5,7 +5,7 @@ AddOn Page: https://www.curseforge.com/wow/addons/mute-wow-sounds
 
 ## Instructions
 
-### MAC Users
+## MAC Users
 The tool likely wont run on a MAC. Sorry folks! 
 Spaghetti code source is available if anyone would like to port it though.
 
@@ -85,7 +85,7 @@ The tool will tell you if there are any errors, these can be read in the ErrorLo
 
 Once complete it will create a file called "CustumSounds.lua" in the output folder.
 
-## Muting Them In-game.
+## Muting Sounds In-game.
 Navigate to your World of Warcraft > Addons > MuteAnnoyingWoWSounds folder.
 
 Copy the 'CustomSounds.lua' file to this folder.
