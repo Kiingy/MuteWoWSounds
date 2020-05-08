@@ -9,10 +9,10 @@ AddOn Page: https://www.curseforge.com/wow/addons/mute-wow-sounds
 The tool likely wont run on a MAC. Sorry folks! 
 Spaghetti code source is available if anyone would like to port it though.
 
-### Download
+## Download
 Download from: https://github.com/Kiingy/MuteWoWSounds/releases/tag/1.0
 
-### Folder Structure
+## Folder Structure
 Once extraced open the MuteWoWSounds folder and you should see:
 * Folder: Output
 * Folder: SoundKitData
@@ -24,7 +24,7 @@ Once extraced open the MuteWoWSounds folder and you should see:
 * File: MuteWoWSounds.exe
 
 
-### Finding SoundKitIDs and creating sound target files.
+## Finding SoundKitIDs and creating sound target files.
 For this I'll show you how to mute raptor mounts.
 
 Go to wowhead and search for any raptor mount.
@@ -78,14 +78,14 @@ You can also save in-file comments by starting the line with '#'.
 
 **There is also an example file provided in the download,**
 
-### Running The Tool.
+## Running The Tool.
 Open 'MuteWoWSounds.exe' and simply click Start.
 
 The tool will tell you if there are any errors, these can be read in the ErrorLog.txt file found in the Output folder.
 
 Once complete it will create a file called "CustumSounds.lua" in the output folder.
 
-### Muting Them In-game.
+## Muting Them In-game.
 Navigate to your World of Warcraft > Addons > MuteAnnoyingWoWSounds folder.
 
 Copy the 'CustomSounds.lua' file to this folder.
@@ -100,7 +100,7 @@ __Note:__ *Don't change anything else. If you have a different number after 'Int
 
 Then you're done! You'll need to restart WoW for these custom mutes to take effect.
 
-### Why is there no in-game way to do this?!
+## Why is there no in-game way to do this?!
 
 While it would be possible to do this in-game, this method has four main advantages.
 
@@ -113,3 +113,11 @@ While it would be possible to do this in-game, this method has four main advanta
    * As this is independant of the WoW client, as long as you keep your sound target files your custom mutes can always be easily recreated.
 4. You can easily share your lists with other players! 
 
+## Finding Sounds on Wowhead
+Wowhead has a huge list of searchable sounds you can find here: https://www.wowhead.com/sounds
+
+If you want to find the "Frostbolt" sounds for example you can simply search for 'frostbolt' and apply the type filter.
+
+Some of the sounds can be tough to find if Blizzard hasn't named them properly, for example the sound you hear when you dismount in-game is called [SpiritWolf](https://www.wowhead.com/sound=3089), located under the Spells category, not very helpful.
+
+Finding the sounds for a mount, creature or pet is generally a lot easier using the method outlined in the above instructions.
