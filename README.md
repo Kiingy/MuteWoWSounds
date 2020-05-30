@@ -73,7 +73,7 @@ So add each of the IDs to the text file we just created like so.
 
 `raptor mounts - 704,705,706,707`
 
-Or as long as each is on a new line you can also break this down further if you prefer, like so:
+Or as long as each is on a new line you can also break this down further if you prefer:
 
 `raptor attack - 704`
 
