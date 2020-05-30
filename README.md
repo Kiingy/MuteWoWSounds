@@ -62,8 +62,11 @@ What we need is just the number "X".
 In the raptor mounts case the URLs for its sounds are:
 
 https://www.wowhead.com/sound=704/raptorattack
+
 https://www.wowhead.com/sound=705/raptorwound
+
 https://www.wowhead.com/sound=706/raptorwoundcritical
+
 https://www.wowhead.com/sound=707/raptordeath
 
 So add each of the IDs to the text file we just created like so.
