@@ -41,13 +41,7 @@ On the NPC page you'll find a "Sounds" tab.
 
 ![NPCSounds](/instructions/images/npcsounds.png)
 
-All the sounds this mount uses are listed here. Click on any.
-
-The wowhead URL will be: 
-
-https://www.wowhead.com/sound=XXX : where 'XXX 'is the SoundKitID. 
-
-These are the IDs you'll need. Go back to the NPC page and keep it open. 
+All the sounds this mount uses are listed here.
 
 Next go to where you extracted the tool and open the SoundTargets folder. In here create and open a new text file, it can be named anything you want.
 
@@ -57,9 +51,22 @@ To mute sounds lines must be formatted like so:
 
 The comment can be anything, followed by a hyphen then each of the sound kit ids you want to mute separated by commas.
 
-The sound kit ids can be found from the sounds tab of the NPC page on wowhead you opened earlier.
+So back to the raptor example.
 
-So back to the raptor mount example:
+On the Sounds tab of the NPC page we opened earlier you'll find the list of sounds that the mount uses, each of them when clicked on will take you to a new page with a URL something like this
+
+https://www.wowhead.com/sound=X/sound-name 
+
+What we need is just the number "X".
+
+In the raptor mounts case the URLs for its sounds are:
+
+https://www.wowhead.com/sound=704/raptorattack
+https://www.wowhead.com/sound=705/raptorwound
+https://www.wowhead.com/sound=706/raptorwoundcritical
+https://www.wowhead.com/sound=707/raptordeath
+
+So add each of the IDs to the text file we just created like so.
 
 `raptor mounts - 704,705,706,707`
 
