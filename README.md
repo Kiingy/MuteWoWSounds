@@ -10,7 +10,7 @@ The tool likely wont run on a MAC. Sorry folks!
 Spaghetti code source is available if anyone would like to port it though.
 
 ## Download.
-Download from: https://github.com/Kiingy/MuteWoWSounds/releases/tag/v1.1
+Download from: https://github.com/Kiingy/MuteWoWSounds/releases/tag/v1.2
 
 ## Folder structure.
 Once extraced open the MuteWoWSounds folder and you should see:
@@ -115,7 +115,7 @@ Then you're done! You'll need to restart WoW for these custom mutes to take effe
 While it would be possible to do this in-game, this method has four main advantages.
 
 1. Using wowhead to find the very specific sounds you want to mute is a lot easier then manually sorting through each soundkit. Wowhead has done a lot of the annoying work for you.
-2. It is much easier to organize the sounds you want to mute..
+2. It is much easier to organize the sounds you want to mute.
    * For example you could create spells.txt, mounts.txt, emotes.txt files. 
    * Should you ever decide to unmute a category, simply delete the file and re-run the tool.
 3. Everything is saved outside of WoW. 
@@ -123,7 +123,7 @@ While it would be possible to do this in-game, this method has four main advanta
    * As this is independant of the WoW client, as long as you keep your sound target files your custom mutes can always be easily recreated.
 4. You can easily share your lists with other players! 
 
-## Finding sounds on wowhead.
+## Finding other sounds on wowhead.
 Wowhead has a huge list of searchable sounds you can find here: https://www.wowhead.com/sounds
 
 If you want to find the "Frostbolt" sounds for example you can simply search for 'frostbolt' and apply the type filter.
