@@ -17,7 +17,7 @@ Once extraced open the MuteWoWSounds folder and you should see:
 * Folder: Output
 * Folder: SoundKitData
   * File: soundkitentry.csv
-  * This file is provided by [wow.tools](https://wow.tools/dbc/?dbc=soundkitentry).
+  * This file is provided by [wago.tools](https://wago.tools/db2/SoundKitEntry).
   * You can always download the latest version from the above link. 
 * Folder: SoundTargets
   * File: Example.txt
